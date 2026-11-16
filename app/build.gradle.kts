@@ -8,6 +8,10 @@ android {
         version = release(37)
     }
 
+        buildFeatures {
+            viewBinding = true
+        }
+
     defaultConfig {
         applicationId = "vn.edu.ute.RecycleView"
         minSdk = 24
@@ -40,4 +44,9 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     androidTestImplementation(libs.androidx.junit)
+    implementation("androidx.recyclerview:recyclerview:1.3.2")
+    implementation("androidx.fragment:fragment-ktx:1.8.2")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.4")
+    implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.8.4")
+    implementation("com.google.android.material:material:1.12.0")
 }
